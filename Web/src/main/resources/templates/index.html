@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adimistracion de Programas</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function calcularTotal() {
+              var ingresos = parseFloat(document.getElementById('ingresos').value);
+              var gastos = parseFloat(document.getElementById('gastos').value);
+        
+              // Calcular el total
+              var total = ingresos - gastos;
+        
+              // Mostrar el total en el campo "total"
+              document.getElementById('total').value = total.toFixed(2);
+            }
+          </script>
+    </head>
+    
+    <body>
+
+        <form>
+            <h2>Minuta de Programas</h2>
+
+            <div class="imputgroup">
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Nombre del programa"><br><br>
+
+                <label for="date">Fecha</label>
+                <input type="datetime-local" id="date" name="date" ><br><br>
+
+                <label for="responsable">Responsable de reunion</label><br><br>
+                <input type="text" name="responsable" id="responsable" placeholder="Nombre"><br><br>
+
+                <label for="participantes">Participantes en la reunion</label><br><br>
+                <textarea name="participantes" id="participantes" cols="=30" rows="2" placeholder="Nombres"></textarea><br><br>
+
+                <label for="objetivos">Objetivos del Programa</label><br><br>
+                <textarea name="objetivos" id="objetivos" cols="30" rows="5" placeholder="Escribe los objetivos"></textarea><br><br>
+
+                <label for="pendientes">Pendientes</label><br><br>
+                <textarea name="pendientes" id="pendientes" cols="30" rows="5" placeholder="Escribe los Pendientes"></textarea><br><br>
+
+                <label for="presupuesto">Presupuesto</label><br><br>
+                <textarea name="presupuesto" id="presupuesto" cols="30" rows="5" placeholder="Descripcion de Presupuesto"></textarea><br><br>
+                
+                <label for="ingresos">Ingresos</label>
+                <input type="number" id="ingresos" placeholder="Ingresos" step="0.01" onchange="calcularTotal()"><br><br>
+
+                <label for="gastos">Gastos</label>
+                <input type="number" id="gastos" placeholder="Gastos" step="0.01" onchange="calcularTotal()"><br><br>
+
+                <label for="total">Total</label>
+                <input type="number" id="total" placeholder="Total" readonly><br><br>
+
+                <label for="evaluacion">Evaluacion</label><br><br>
+                <textarea id="evaluacion" placeholder="Evaluacion del proyecto" rows="3" cols="30" required></textarea><br><br>
+
+                <label for="proximafecha">Fecha de la Próxima Reunión </label><br><br>
+                <input type="datetime-local" id="proximafecha" name="proximafecha" required> <br><br>       
+
+                <input class="btn" type="submit" value="Guardar" >
+            </div>
+
+        </form>
+        
+    </body>
+    
+</html>

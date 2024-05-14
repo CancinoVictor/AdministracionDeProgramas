@@ -1,0 +1,6 @@
+com\uadec\Web\RestController\ReunionesController.class
+com\uadec\AdminPrograms\RestController\controladorRest.class
+com\uadec\Web\repositorio\ReunionRepository.class
+com\uadec\Web\WebApplication.class
+com\uadec\Web\servicio\ReunionesService.class
+com\uadec\Web\reunion\Reunion.class

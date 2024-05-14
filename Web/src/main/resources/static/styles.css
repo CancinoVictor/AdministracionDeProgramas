@@ -1,0 +1,77 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 10vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-image: url('imagen1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1800px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+form{
+    background-color:rgb(252, 251, 251);
+    padding: 55px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    text-align: center;
+    width: 400px;
+}
+.inputgroup{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+h2{
+    color: rgb(93, 67, 104);
+    font-family: 'Helvetica';
+    font-size: 35px;
+}
+label{
+    color: rgb(85, 85, 77);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+input{
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background-color:rgb(236, 235, 235);
+    border: 1px solid #f0faf100;
+    color: rgba(0, 0, 0, 0.295);
+    outline: none;
+}
+textarea{
+    padding: 5px 55px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color:rgb(236, 235, 235);
+    border: 1px solid #81858100;
+    outline: none;
+    text-align:center;
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(185, 185, 194);
+}
+.btn{
+    font-size: xx-large;
+    color:rgb(255, 255, 255);
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(214, 83, 226);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(175, 46, 214);
+}
+h1{
+    color: rgb(93, 67, 104);
+    font-family: 'Helvetica';
+    font-size: 35px;
+}
